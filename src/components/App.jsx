@@ -2,9 +2,9 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import SharedLayout from './sharedLayout/SharedLayout';
+import SharedLayout from './sharedlayout/SharedLayout';
 
-const HomePageRender = lazy(() => import('../pages/HomePage'));
+const HomePageRender = lazy(() => import('../pages/Homepage'));
 const MoviesPageRender = lazy(() => import('../pages/MoviesPage'));
 const MovieDetailsRender = lazy(() => import('../pages/MovieDetailsPage'));
 
