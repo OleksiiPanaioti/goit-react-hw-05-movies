@@ -3,12 +3,13 @@ export const theme = {
     black: '#000',
     white: '#fff',
     text: '#2a2a2a',
-    background: '#fff',
+    background: '#3c3a3acc',
     primary: '#07c',
     secondary: '#05a',
-    accent: '#ff5722',
+    accent: '#0d00ff',
     muted: '#f6f6f6',
   },
+
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
     body: 'system-ui, sans-serif',
@@ -19,8 +20,8 @@ export const theme = {
     xs: '12px',
     s: '14px',
     m: '16px',
-    l: '32px',
-    xl: '64px',
+    l: '28px',
+    xl: '32px',
   },
   fontWeights: {
     normal: 400,
@@ -32,11 +33,11 @@ export const theme = {
   },
   borders: {
     none: 'none',
-    normal: '1px solid',
+    normal: '2px solid #a1a1a1',
   },
   radii: {
     none: '0',
-    normal: '4px',
+    normal: '6px',
     round: '50%',
   },
 };

@@ -51,10 +51,12 @@ export default function MoviesPageRender() {
 }
 const SearchForm = styled(Form)`
   margin-left: ${p => p.theme.space[3]}px;
+  display: flex;
+  align-items: center;
 `;
 const Input = styled(Field)`
   margin-right: ${p => p.theme.space[3]}px;
-  width: ${p => p.theme.space[8]}px;
+  width: 450px;
   height: ${p => p.theme.space[5]}px;
   border-radius: ${p => p.theme.radii.normal};
   :hover,
@@ -64,13 +66,17 @@ const Input = styled(Field)`
 `;
 
 const SearchBtn = styled.button`
+  width: 130px;
   height: ${p => p.theme.space[5]}px;
   padding: ${p => p.theme.space[2]}px;
   border-radius: ${p => p.theme.radii.normal};
-  :hover,
+  border: none;
+  :hover {
+    background-color: ${p => p.theme.colors.accent};
+    font-weight: ${p => p.theme.fontWeights.bold};
+  }
   :focus {
-    border: ${p => p.theme.borders.normal} ${p => p.theme.colors.accent};
-    background-color: ${p => p.theme.colors.white};
+    background-color: ${p => p.theme.colors.accent};
     font-weight: ${p => p.theme.fontWeights.bold};
   }
 `;
